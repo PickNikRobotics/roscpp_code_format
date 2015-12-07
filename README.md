@@ -52,3 +52,11 @@ Format your source code if its in some directory such as the ``catkin_ws`` (feel
 Set a keyboard shortcut to run, such as F12
 
     (global-set-key [f12] 'maybe-run-ros-clang-format)
+
+### Atom
+
+Install the [clang-format](https://atom.io/packages/clang-format) package via package manager or ``apm install clang-format``.
+
+In the package settings set ``clang-format-3.6`` as your executable and point 'Style' to your ``.clang_format`` file.
+   
+
