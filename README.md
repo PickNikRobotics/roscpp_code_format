@@ -3,7 +3,7 @@ Why waste your valuable development time formatting code manually when we are tr
 
 The repo contains an auto formatting script for the [ROS C++ Style Guidelines](http://wiki.ros.org/CppStyleGuide).
 
-> **Note: this style is in beta format as its only been tested by Dave Coleman**
+> **Note: this style is in beta format, please submit suggestions or fixes!**
 
 ## Setup
 
@@ -43,7 +43,7 @@ Format your source code if its in some directory such as the ``catkin_ws`` (feel
 
 ```
 (defun run-ros-clang-format ()
-  "Runs clang-format on cpp,hpp files in catkin_ws/ and reverts buffer."
+  "Runs clang-format on cpp,h files in catkin_ws/ and reverts buffer."
   (interactive)
   (and
    (string-match "/catkin_ws/.*\\.\\(h\\|cpp\\)$" buffer-file-name)
@@ -55,7 +55,9 @@ Format your source code if its in some directory such as the ``catkin_ws`` (feel
 
 Set a keyboard shortcut to run, such as F12
 
-    (global-set-key [f12] 'maybe-run-ros-clang-format)
+    (global-set-key [f12] 'run-ros-clang-format)
+
+Note: be sure to save your buffer before running this script, as it will overwrite unsaved changes. This caveat shouldn't be hard to fix.
 
 ### Atom Editor Configuration
 
