@@ -31,7 +31,7 @@ Format entire directory recursively including subfolders:
 
     find . -name '*.h' -or -name '*.hpp' -or -name '*.cpp' | xargs clang-format-3.6 --i -style=file $1
 
-### Emacs
+### Emacs Editor Configuration
 
 In your ``~/.emacs`` config file, add the following:
 
@@ -52,3 +52,11 @@ Format your source code if its in some directory such as the ``catkin_ws`` (feel
 Set a keyboard shortcut to run, such as F12
 
     (global-set-key [f12] 'maybe-run-ros-clang-format)
+
+### Atom Editor Configuration
+
+Install the [clang-format](https://atom.io/packages/clang-format) package via the Atom package manager or ``apm install clang-format``.
+
+In the package settings set ``clang-format-3.6`` as your executable and point 'Style' to your ``.clang_format`` file.
+   
+
