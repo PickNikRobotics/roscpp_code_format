@@ -25,7 +25,7 @@ PenaltyBreakBeforeFirstCallParameter: 19
 PenaltyBreakComment: 60
 PenaltyBreakString: 1
 PenaltyBreakFirstLessLess: 1000
-PenaltyExcessCharacter: 10
+PenaltyExcessCharacter: 100
 PenaltyReturnTypeOnItsOwnLine: 90
 PointerBindsToType: false
 SpacesBeforeTrailingComments: 2
@@ -44,4 +44,3 @@ SpaceAfterControlStatementKeyword: true
 SpaceBeforeAssignmentOperators: true
 ContinuationIndentWidth: 4
 ...
-
