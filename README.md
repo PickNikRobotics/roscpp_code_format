@@ -11,9 +11,13 @@ The repo contains an auto formatting script for the [ROS C++ Style Guidelines](h
 
    ``sudo apt-get install -y clang-format-3.6``
 
- * Then put in the root of your catkin workspace the file ``.clang_format``, located in this repo. You can save this file from [this link](https://raw.githubusercontent.com/davetcoleman/roscpp_code_format/master/.clang-format). For example, place it on your computer here:
+ * Then symlink or copy in the root of your catkin workspace the file ``.clang_format``, located in this repo. You can save this file from [this link](https://raw.githubusercontent.com/davetcoleman/roscpp_code_format/master/.clang-format). For example, place it on your computer here:
 
    ``~/catkin_ws/.clang_format``
+
+ * If you are interested in improving this configuration file, we recommend you checkout the git repo and symlink, e.g.:
+
+   ``ln -s ~/roscpp_code_format/.clang-format ~/catkin_ws/.clang-format``
 
  * Now any file inside your catkin workspace will be formatted with the ROS style guidelines described in this config file
 
@@ -58,5 +62,3 @@ Set a keyboard shortcut to run, such as F12
 Install the [clang-format](https://atom.io/packages/clang-format) package via the Atom package manager or ``apm install clang-format``.
 
 In the package settings set ``clang-format-3.6`` as your executable and point 'Style' to your ``.clang_format`` file.
-   
-
