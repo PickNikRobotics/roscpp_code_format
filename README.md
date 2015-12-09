@@ -47,6 +47,7 @@ Format your source code if its in some directory such as the ``catkin_ws`` (feel
   (interactive)
   (and
    (string-match "/catkin_ws/.*\\.\\(h\\|cpp\\)$" buffer-file-name)
+   (save-some-buffers 'no-confirm)
    (shell-command (concat "clang-format-3.6 -style=file -i " buffer-file-name))
    (message (concat "Saved and ran clang-format on " buffer-file-name))
    (revert-buffer t t t)
@@ -56,8 +57,6 @@ Format your source code if its in some directory such as the ``catkin_ws`` (feel
 Set a keyboard shortcut to run, such as F12
 
     (global-set-key [f12] 'run-ros-clang-format)
-
-Note: be sure to save your buffer before running this script, as it will overwrite unsaved changes. This caveat shouldn't be hard to fix.
 
 ### Atom Editor Configuration
 
