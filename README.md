@@ -29,11 +29,11 @@ You can run **clang_format** in several ways:
 
 Format single file:
 
-    clang-format-3.6 --i -style=file MY_ROS_NODE.cpp
+    clang-format-3.6 -i -style=file MY_ROS_NODE.cpp
 
 Format entire directory recursively including subfolders:
 
-    find . -name '*.h' -or -name '*.hpp' -or -name '*.cpp' | xargs clang-format-3.6 --i -style=file $1
+    find . -name '*.h' -or -name '*.hpp' -or -name '*.cpp' | xargs clang-format-3.6 -i -style=file $1
 
 ### Emacs Editor Configuration
 
