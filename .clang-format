@@ -27,12 +27,12 @@ PenaltyBreakBeforeFirstCallParameter: 19
 PenaltyBreakComment: 60
 PenaltyBreakString: 1
 PenaltyBreakFirstLessLess: 1000
-PenaltyExcessCharacter: 100
+PenaltyExcessCharacter: 1000
 PenaltyReturnTypeOnItsOwnLine: 90
 PointerBindsToType: false
 SpacesBeforeTrailingComments: 2
-Cpp11BracedListStyle: true
-Standard:        Cpp11
+Cpp11BracedListStyle: false
+Standard:        Auto
 IndentWidth:     2
 TabWidth:        2
 UseTab:          Never
