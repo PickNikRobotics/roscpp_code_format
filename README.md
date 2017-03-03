@@ -11,9 +11,9 @@ The repo contains an auto formatting script for the [ROS C++ Style Guidelines](h
 
    ``sudo apt-get install -y clang-format-3.6``
 
- * Then symlink or copy in the root of your catkin workspace the file ``.clang_format``, located in this repo. You can save this file from [this link](https://raw.githubusercontent.com/davetcoleman/roscpp_code_format/master/.clang-format). For example, place it on your computer here:
+ * Then symlink or copy in the root of your catkin workspace the file ``.clang-format``, located in this repo. You can save this file from [this link](https://raw.githubusercontent.com/davetcoleman/roscpp_code_format/master/.clang-format). For example, place it on your computer here:
 
-   ``~/catkin_ws/.clang_format``
+   ``~/catkin_ws/.clang-format``
 
  * If you are interested in improving this configuration file, we recommend you checkout the git repo and symlink, e.g.:
 
