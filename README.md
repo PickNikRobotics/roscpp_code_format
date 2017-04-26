@@ -3,6 +3,10 @@
 This repo contains an auto formatting script for the [ROS C++ Style Guidelines](http://wiki.ros.org/CppStyleGuide) with some
 minor adjustments for our style guidelines.
 
+## Clang dependency
+
+This clang format file uses clang-format-4.0
+
 ## Usage with Qt
 
 To set up Qt Creator to use this clang formatting follow the instructions [here](http://doc.qt.io/qtcreator/creator-beautifier.html).
