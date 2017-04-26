@@ -15,7 +15,7 @@ BreakBeforeBinaryOperators: false
 BreakBeforeTernaryOperators: false
 BreakConstructorInitializersBeforeComma: true
 BinPackParameters: true
-ColumnLimit:    120
+ColumnLimit:    90
 ConstructorInitializerAllOnOneLineOrOnePerLine: true
 DerivePointerBinding: true
 ExperimentalAutoDetectBinPacking: false
@@ -27,8 +27,8 @@ PenaltyBreakBeforeFirstCallParameter: 19
 PenaltyBreakComment: 60
 PenaltyBreakString: 1
 PenaltyBreakFirstLessLess: 1000
-PenaltyExcessCharacter: 1000
-PenaltyReturnTypeOnItsOwnLine: 90
+PenaltyExcessCharacter: 2
+PenaltyReturnTypeOnItsOwnLine: 1000
 PointerBindsToType: false
 SpacesBeforeTrailingComments: 2
 Cpp11BracedListStyle: false
