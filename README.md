@@ -6,6 +6,7 @@ minor adjustments for our style guidelines.
 ## Clang dependency
 
 This clang format file uses clang-format-4.0
+`sudo apt-get install clang-format-4.0`
 
 ## Usage with Qt
 
