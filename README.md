@@ -13,8 +13,9 @@ This clang format file uses clang-format-4.0
 
 To set up Qt Creator to use this clang formatting follow the instructions [here](http://doc.qt.io/qtcreator/creator-beautifier.html).
 
-On the **Clang Format** Panel choose **Use predefined style: File**, then create a soft link on the root of your workspace pointing to this
-file. It is recomended to deactivate the **Enable auto format on file save** option and create a [keyboard shortcut](http://doc.qt.io/qtcreator/creator-keyboard-shortcuts.html)
+On the **Clang Format** Panel change the **Clang Format command** to 'clang-format-4.0'. After this, choose **Use predefined style: File**, and then create a soft link on the root of your files workspace (where all your code is) pointing to this file and with the same name (.clang-format). 
+
+It is recomended to deactivate the **Enable auto format on file save** option and create a [keyboard shortcut](http://doc.qt.io/qtcreator/creator-keyboard-shortcuts.html)
 to format the files.
 
 
