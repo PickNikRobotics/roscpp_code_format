@@ -83,7 +83,7 @@ https://github.com/rosshemsley/SublimeClangFormat/blob/master/README.md
 
 ### Usage with Visual Studio Code
 
-Install the [c/c++ extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools).
+Install the [C/C++ extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools).
 
 Put the ``.clang-format`` file in your workspace.
 
