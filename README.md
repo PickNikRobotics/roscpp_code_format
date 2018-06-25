@@ -81,6 +81,16 @@ Configuration Clang format in Sublime:
 
 https://github.com/rosshemsley/SublimeClangFormat/blob/master/README.md
 
+### Usage with Visual Studio Code
+
+Install the [C/C++ extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools).
+
+Put the ``.clang-format`` file in your workspace.
+
+Select ``Format Document`` in the right-click context menu, or use the shortcut ``Ctrl+Shift+I``.
+
+This explanation and more [here](https://code.visualstudio.com/docs/languages/cpp#_code-formatting).
+
 ## Exceptions to clang-format
 
 Occationally the auto formatting used by clang-format might not make sense e.g. for lists of items that are easier to read on separate lines. It can be overwritten with the commands:
