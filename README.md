@@ -4,11 +4,13 @@ Why waste your valuable development time formatting code manually when we are tr
 
 The repo contains an auto formatting script for the [ROS C++ Style Guidelines](http://wiki.ros.org/CppStyleGuide).
 
+Updated June 2020 to support Ubuntu 18.04 / ROS Melodic.
+
 ## Setup
 
  * Install **clang_format**:
 
-   ``sudo apt-get install -y clang-format-3.8``
+   ``sudo apt-get install -y clang-format-3.9``
 
  * Then symlink or copy in the root of your catkin workspace the file ``.clang-format``, located in this repo. You can save this file from [this link](https://raw.githubusercontent.com/davetcoleman/roscpp_code_format/master/.clang-format). For example, place it on your computer here:
 
@@ -28,11 +30,11 @@ You can run **clang_format** in several ways:
 
 Format single file:
 
-    clang-format-3.8 -i -style=file MY_ROS_NODE.cpp
+    clang-format-3.9 -i -style=file MY_ROS_NODE.cpp
 
 Format entire directory recursively including subfolders:
 
-    find . -name '*.h' -or -name '*.hpp' -or -name '*.cpp' | xargs clang-format-3.8 -i -style=file $1
+    find . -name '*.h' -or -name '*.hpp' -or -name '*.cpp' | xargs clang-format-3.9 -i -style=file $1
 
 ### Emacs Editor Configuration
 
@@ -47,7 +49,7 @@ Format your source code if its in some directory such as the ``catkin_ws`` (feel
   (and
    (string-match "/catkin_ws/.*\\.\\(h\\|cpp\\)$" buffer-file-name)
    (save-some-buffers 'no-confirm)
-   (shell-command (concat "clang-format-3.8 -style=file -i " buffer-file-name))
+   (shell-command (concat "clang-format-3.9 -style=file -i " buffer-file-name))
    (message (concat "Saved and ran clang-format on " buffer-file-name))
    (revert-buffer t t t)
 ))
@@ -61,7 +63,7 @@ Set a keyboard shortcut to run, such as F12
 
 Install the [clang-format](https://atom.io/packages/clang-format) package via the Atom package manager or ``apm install clang-format``.
 
-In the package settings set ``clang-format-3.8`` as your executable and point 'Style' to your ``.clang_format`` file.
+In the package settings set ``clang-format-3.9`` as your executable and point 'Style' to your ``.clang_format`` file.
 
 ### Usage with Qt
 
